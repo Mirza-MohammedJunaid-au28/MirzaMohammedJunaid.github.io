@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: black;
+}
+.wrapper{
+  display: flex;
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: red;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+nav{
+    background: #151515;
+    padding: 5px 40px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li{
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+nav ul li.items{
+    position: relative;
+    width: auto;
+    margin: 0 16px;
+    text-align: center;
+    order: 3;
+}
+
+nav ul li.items:after{
+    position: absolute;
+    content: '';
+    bottom: 5px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: red;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+nav ul li.items:hover:after{
+    opacity: 1;
+    bottom: 8px;
+}
+
+nav ul li.logo{
+flex: 1;
+color: white;
+font-size: 25px;
+font-weight: 600;
+cursor: default;
+user-select: none;
+}
+
+nav ul li.logo:hover{
+color: red;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+nav ul li:hover a{
+    color: red;
+}
+
+nav ul li i{
+    font-size: 25px;
+}
+
+nav ul li.btn{
+    display: none;
+}
+
+nav ul li.btn.hide i:before{
+    content: '\f00d';
+}
+
+.start{
+  position: relative;
+  bottom: 300px;
+  color: red;
+  border: 2px solid red;
+  height: 30px;
+  width: 100px;
+  left: 46vw;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.start:hover{
+  background-color: red;
+  color: black;
+}
+
+@media all and (max-width: 900px){
+    nav{
+        padding: 5px 30px;
+    }
+
+    nav ul li.items{
+        width: 100%;
+        display: none;
+    }
+
+    nav ul li.items.show{
+        display: block;
+    }
+
+    nav ul li.btn{
+        display: block;
+    }
+    
+
+    nav ul li.items:hover{
+        border-radius: 5px;
+        box-shadow: inset 0 0 5px red,
+                    inset 0 0 10px red;
+    }
+
+    nav ul li.items:hover:after{
+        opacity: 0;
+    }
+}

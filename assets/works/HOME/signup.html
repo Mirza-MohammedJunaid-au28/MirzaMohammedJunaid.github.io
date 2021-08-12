@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f70f3c69c3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup.css">
+    <title>Junaid</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo" href="https://www.instagram.com/its_junaid_osm/">Junaid</li>
+            <li class="items"><a href="signup.html">Sign-up</a></li>
+            <li class="items"><a href="login.html" >Login</a></li>
+            <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <section>
+        <form>
+            <div class="login">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Username" class="input">
+                <br>
+                <i class="fa fa-envelope"></i>
+                <input type="mail" placeholder="G-Mail" class="input">
+                <br>
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" class="input">
+                <br>
+                <a href="login.html">Submit</a>
+            </div>
+        </form>
+    </section>
+    <script>
+        $(document).ready(function(){
+            $('.btn').click(function(){
+                $('.items').toggleClass("show");
+                $('ul li').toggleClass("hide");
+            });
+        });
+    </script>
+</body>
+</html>

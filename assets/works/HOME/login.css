@@ -1,0 +1,58 @@
+.fa-user,.fa-lock{
+    padding-left: 30px;
+    font-size: 20px;
+    color: red;
+    }
+
+.login{
+font-family: 'Jomhuria', cursive;
+width: 300px;
+position: absolute;
+height: 300px;
+left: 630px;
+top: 150px;
+border: red 2px solid;
+box-shadow: 0 0 10px 5px;
+padding-bottom: 20px;
+padding-top: 60px;
+border-radius: 15px;
+}
+
+
+.input{
+    font-family: 'Jomhuria', cursive;
+    margin: 20px;
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    font-size: 30px;
+    color: red;
+    border: red 2px solid;
+    box-shadow: 0 0 10px 5px;
+    letter-spacing: 2px;
+}   
+
+.login a {
+    font-family: 'Jomhuria', cursive;
+    display: block;
+    margin : 0 auto;
+    margin-top: 20px;
+    width: 70px;
+    border: red 2px solid;
+    box-shadow: 0 0 10px 5px;
+    font-size: 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: red;
+    text-align: center;
+}
+
+.login a:hover{
+    background-color: red;
+    color: black;
+}
+
+::placeholder{
+    padding: 10px;
+    color: red;
+}

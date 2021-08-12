@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
+    <title>Junaid</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo" href="https://www.instagram.com/its_junaid_osm/">Junaid</li>
+            <li class="items"><a href="index.html">Home</a></li>
+            <li class="items"><a href="services.html">Services</a></li>
+            <li class="items"><a href="#">About Me</a></li>
+            <li class="items"><a href="login.html" >Logout</a></li>
+            <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+
+    <div class="gallery">
+        <a target="_blank">
+          <img src="s1.png" width="600" height="400">
+        </a>
+        <div class="desc"><b>UI / UX designing</b></div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank">
+          <img src="s2.jpg" width="600" height="400">
+        </a>
+        <div class="desc"><b>Backend Develpoer</b></div>
+      </div>
+    
+      <div class="gallery">
+        <a target="_blank">
+          <img src="s3.jpg" width="600" height="400">
+        </a>
+        <div class="desc"><b>Game Developer</b></div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank">
+          <img src="s4.png" width="600" height="400">
+        </a>
+        <div class="desc"><b>Tester</b></div>
+      </div>
+
+      <script>
+        $(document).ready(function(){
+            $('.btn').click(function(){
+                $('.items').toggleClass("show");
+                $('ul li').toggleClass("hide");
+            });
+        });
+    </script>
+</body>
+</html>

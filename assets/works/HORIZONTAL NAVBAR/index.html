@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Horizontal Navbar</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo" href="https://www.instagram.com/its_junaid_osm/">Junaid</li>
+            <li class="items"><a href="https://www.instagram.com/memonsabir2095/" target="_blank">Sabir</a></li>
+            <li class="items"><a href="https://www.instagram.com/arzu_shaikh99/" target="_blank">Arzoo</a></li>
+            <li class="items"><a href="https://www.instagram.com/jordan.saad/" target="_blank">Saad</a></li>
+            <li class="items"><a href="https://www.instagram.com/_halim_ansari_/" target="_blank">Halim</a></li>
+            <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <section>
+
+    </section>
+    <script>
+        $(document).ready(function(){
+            $('.btn').click(function(){
+                $('.items').toggleClass("show");
+                $('ul li').toggleClass("hide");
+            });
+        });
+    </script>
+</body>
+</html>
